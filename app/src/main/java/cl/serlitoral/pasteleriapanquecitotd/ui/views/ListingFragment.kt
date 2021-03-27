@@ -28,7 +28,7 @@ class ListingFragment : Fragment() {
         val adapter = CakeAdapter()
         binding.rvCakeList.adapter = adapter
         binding.rvCakeList.layoutManager = GridLayoutManager(context, 2)
-        binding.rvCakeList.addItemDecoration(DividerItemDecoration(requireContext(), DividerItemDecoration.VERTICAL))
+        //binding.rvCakeList.addItemDecoration(DividerItemDecoration(requireContext(), DividerItemDecoration.VERTICAL))
 
         cakeVM.cakeList().observe(viewLifecycleOwner, {
             adapter.update(it)
